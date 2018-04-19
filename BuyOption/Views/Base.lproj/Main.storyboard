@@ -17,7 +17,7 @@
         <array key="AvenirNextCondensed.ttc">
             <string>AvenirNextCondensed-DemiBold</string>
         </array>
-        <array key="Axile - Personal Use Only.otf">
+        <array key="Axile - Personal Use Only.ttf">
             <string>Axile-PersonalUseOnly</string>
         </array>
     </customFonts>
@@ -261,7 +261,7 @@
             </objects>
             <point key="canvasLocation" x="1177" y="1961"/>
         </scene>
-        <!--OPTION-->
+        <!--Option-->
         <scene sceneID="OUz-kk-toV">
             <objects>
                 <tableViewController id="OpG-XD-5eA" customClass="OptionTableViewController" customModule="BuyOption" customModuleProvider="target" sceneMemberID="viewController">
@@ -479,13 +479,13 @@
                             <outlet property="delegate" destination="OpG-XD-5eA" id="Zgl-io-jZf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="OPTION" id="UaZ-7X-7sc"/>
+                    <navigationItem key="navigationItem" title="Option" id="UaZ-7X-7sc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJZ-K1-dRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2385" y="2355"/>
         </scene>
-        <!--nameListe-->
+        <!--Liste-->
         <scene sceneID="G8K-Q3-sH6">
             <objects>
                 <tableViewController id="TkA-ac-7Z6" customClass="ListeTableViewController" customModule="BuyOption" customModuleProvider="target" sceneMemberID="viewController">
@@ -755,7 +755,7 @@
                             <outlet property="delegate" destination="TkA-ac-7Z6" id="bBi-1l-S0f"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="nameListe" id="jq5-hl-eYA">
+                    <navigationItem key="navigationItem" title="Liste" id="jq5-hl-eYA">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="ZM3-aY-vQf"/>
                     </navigationItem>
                 </tableViewController>
@@ -763,7 +763,7 @@
             </objects>
             <point key="canvasLocation" x="2384.8000000000002" y="3192.953523238381"/>
         </scene>
-        <!--numerberOrder-->
+        <!--Detail List-->
         <scene sceneID="qhe-mK-pSI">
             <objects>
                 <tableViewController id="DM3-g9-gaN" customClass="DetailListeTableViewController" customModule="BuyOption" customModuleProvider="target" sceneMemberID="viewController">
@@ -1280,13 +1280,13 @@
                             <outlet property="delegate" destination="DM3-g9-gaN" id="d8o-8p-hwd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="numerberOrder" id="1a3-Gm-5am"/>
+                    <navigationItem key="navigationItem" title="Detail List" id="1a3-Gm-5am"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hH-jc-0yn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3490" y="3193"/>
         </scene>
-        <!--ORDER-->
+        <!--Order-->
         <scene sceneID="wwU-R1-nhI">
             <objects>
                 <tableViewController id="qNO-6y-QRb" customClass="OrderTableViewController" customModule="BuyOption" customModuleProvider="target" sceneMemberID="viewController">
@@ -1527,13 +1527,13 @@
                             <outlet property="delegate" destination="qNO-6y-QRb" id="Znz-ru-LCl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ORDER" id="lrw-Wx-edv"/>
+                    <navigationItem key="navigationItem" title="Order" id="lrw-Wx-edv"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WcA-jR-dFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2385" y="1503"/>
         </scene>
-        <!--PAYMENT-->
+        <!--Payment-->
         <scene sceneID="Rbk-fs-nqg">
             <objects>
                 <tableViewController id="PGs-Vq-eNl" customClass="PaymentTableViewController" customModule="BuyOption" customModuleProvider="target" sceneMemberID="viewController">
@@ -1797,7 +1797,7 @@
                             <outlet property="delegate" destination="PGs-Vq-eNl" id="d2C-kW-l81"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="PAYMENT" id="OBc-6Z-OVJ"/>
+                    <navigationItem key="navigationItem" title="Payment" id="OBc-6Z-OVJ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8KJ-TO-e49" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
