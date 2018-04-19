@@ -58,7 +58,6 @@
 		1E35AF022088DDFB0013C944 /* SearchCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35AF012088DDFB0013C944 /* SearchCategoryCell.swift */; };
 		1E35AF042088DE240013C944 /* SearchSubcategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35AF032088DE240013C944 /* SearchSubcategoryCell.swift */; };
 		1E3A511B20866C9400BD54D8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A511A20866C9400BD54D8 /* Product.swift */; };
-		1E3A511E20874E7800BD54D8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E21F3F120861F2C003182E1 /* Info.plist */; };
 		1E3A512420875B4800BD54D8 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A512320875B4800BD54D8 /* HomeTableViewController.swift */; };
 		1E3A512620875B7600BD54D8 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A512520875B7600BD54D8 /* HomeCell.swift */; };
 		1E3A512820876BC100BD54D8 /* PanierTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A512720876BC100BD54D8 /* PanierTableViewController.swift */; };
@@ -437,7 +436,6 @@
 				1E21F40520864167003182E1 /* axile in Resources */,
 				1E21F3F020861F2C003182E1 /* LaunchScreen.storyboard in Resources */,
 				1E21F3ED20861F2C003182E1 /* Assets.xcassets in Resources */,
-				1E3A511E20874E7800BD54D8 /* Info.plist in Resources */,
 				1E21F3EB20861F2C003182E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
