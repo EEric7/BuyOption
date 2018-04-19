@@ -1,5 +1,5 @@
 //
-//  CategoryTableViewCell.swift
+//  ItemDetailCell.swift
 //  BuyOption
 //
 //  Created by Eric ELEMBA ADI on 19/04/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CategoryTableViewCell: UITableViewCell {
+class ItemDetailCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

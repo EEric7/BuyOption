@@ -1,14 +1,14 @@
 //
-//  HomeTableViewCell.swift
+//  CardDetailCell.swift
 //  BuyOption
 //
-//  Created by Eric ELEMBA ADI on 18/04/2018.
+//  Created by Eric ELEMBA ADI on 19/04/2018.
 //  Copyright © 2018 Eric ELEMBA ADI. All rights reserved.
 //
 
 import UIKit
 
-class HomeTableViewCell: UITableViewCell {
+class CardDetailCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
