@@ -9,7 +9,8 @@
 import UIKit
 
 class SliderOptionCell: UITableViewCell {
-
+    @IBOutlet weak var sliderPriceOrder: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

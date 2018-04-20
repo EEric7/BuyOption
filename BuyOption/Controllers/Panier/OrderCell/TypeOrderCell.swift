@@ -9,7 +9,8 @@
 import UIKit
 
 class TypeOrderCell: UITableViewCell {
-
+    @IBOutlet weak var nameType: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

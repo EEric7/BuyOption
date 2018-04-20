@@ -9,7 +9,8 @@
 import UIKit
 
 class CheckoutPanierCell: UITableViewCell {
-
+    @IBOutlet weak var checkout: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

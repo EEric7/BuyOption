@@ -9,7 +9,12 @@
 import UIKit
 
 class DetailProfileCell: UITableViewCell {
-
+    @IBOutlet weak var inProgress: UILabel!
+    @IBOutlet weak var order: UILabel!
+    @IBOutlet weak var nbrOrder: UILabel!
+    @IBOutlet weak var option: UILabel!
+    @IBOutlet weak var nbrOption: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

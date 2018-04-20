@@ -9,7 +9,8 @@
 import UIKit
 
 class BuyOptionCell: UITableViewCell {
-
+    @IBOutlet weak var buyOption: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

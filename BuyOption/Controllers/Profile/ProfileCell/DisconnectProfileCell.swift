@@ -9,7 +9,8 @@
 import UIKit
 
 class DisconnectProfileCell: UITableViewCell {
-
+    @IBOutlet weak var discounnect: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

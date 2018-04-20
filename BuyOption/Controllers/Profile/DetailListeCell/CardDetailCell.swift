@@ -9,7 +9,15 @@
 import UIKit
 
 class CardDetailCell: UITableViewCell {
-
+    @IBOutlet weak var nameCard: UILabel!
+    @IBOutlet weak var saisieNameCard: UITextField!
+    @IBOutlet weak var cardNumber: UILabel!
+    @IBOutlet weak var saisieCardNumber: UITextField!
+    @IBOutlet weak var expirationDate: UILabel!
+    @IBOutlet weak var saisieExpirationDate: UITextField!
+    @IBOutlet weak var securityCode: UILabel!
+    @IBOutlet weak var saisieSecurityCode: UITextField!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

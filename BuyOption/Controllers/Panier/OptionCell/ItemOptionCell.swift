@@ -9,7 +9,10 @@
 import UIKit
 
 class ItemOptionCell: UITableViewCell {
-
+    @IBOutlet weak var imageItem: UIImageView!
+    @IBOutlet weak var nameItem: UILabel!
+    @IBOutlet weak var priceItem: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -9,7 +9,8 @@
 import UIKit
 
 class OptionListeCell: UITableViewCell {
-
+    @IBOutlet weak var optionListe: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -9,7 +9,13 @@
 import UIKit
 
 class SubTotalDetailCell: UITableViewCell {
-
+    @IBOutlet weak var subtotal: UILabel!
+    @IBOutlet weak var priceSubtotal: UILabel!
+    @IBOutlet weak var estimSH: UILabel!
+    @IBOutlet weak var priceEstimSH: UILabel!
+    @IBOutlet weak var taxe: UILabel!
+    @IBOutlet weak var priceTaxe: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

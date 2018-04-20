@@ -9,7 +9,8 @@
 import UIKit
 
 class SearchSubcategoryCell: UITableViewCell {
-
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -9,7 +9,9 @@
 import UIKit
 
 class TotalPaymentCell: UITableViewCell {
-
+    @IBOutlet weak var total: UILabel!
+    @IBOutlet weak var priceTotal: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

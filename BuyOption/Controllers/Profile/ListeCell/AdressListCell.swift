@@ -9,7 +9,12 @@
 import UIKit
 
 class AdressListCell: UITableViewCell {
-
+    @IBOutlet weak var firstLastName: UILabel!
+    @IBOutlet weak var street: UILabel!
+    @IBOutlet weak var cP: UILabel!
+    @IBOutlet weak var city: UILabel!
+    @IBOutlet weak var country: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

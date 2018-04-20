@@ -9,7 +9,10 @@
 import UIKit
 
 class DetailOrderDetailCell: UITableViewCell {
-
+    @IBOutlet weak var dateOrder: UILabel!
+    @IBOutlet weak var dateLineOrder: UILabel!
+    @IBOutlet weak var statutOrder: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

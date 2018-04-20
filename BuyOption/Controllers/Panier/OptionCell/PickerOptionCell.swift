@@ -9,7 +9,9 @@
 import UIKit
 
 class PickerOptionCell: UITableViewCell {
-
+    @IBOutlet weak var pickerKindeTime: UIPickerView!
+    @IBOutlet weak var pickerNbrTime: UIPickerView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

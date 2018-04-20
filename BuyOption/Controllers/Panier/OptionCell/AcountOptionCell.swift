@@ -9,7 +9,9 @@
 import UIKit
 
 class AcountOptionCell: UITableViewCell {
-
+    @IBOutlet weak var account: UILabel!
+    @IBOutlet weak var fieldAccount: UITextField!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

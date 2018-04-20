@@ -9,7 +9,10 @@
 import UIKit
 
 class SuccesOptionCell: UITableViewCell {
-
+    @IBOutlet weak var percentage: UILabel!
+    @IBOutlet weak var succes: UILabel!
+    @IBOutlet weak var progressSucces: UIProgressView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

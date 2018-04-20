@@ -55,6 +55,9 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="LPv-x8-b2b" secondAttribute="bottom" constant="14" id="enO-xl-589"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nbrItem" destination="LPv-x8-b2b" id="I69-vP-BCc"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemPanierCell" rowHeight="145" id="YIM-8Q-5M7" customClass="ItemPanierCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="98" width="375" height="145"/>
@@ -116,6 +119,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="buyOption" destination="RN2-Xb-uI2" id="gUM-gh-fYu"/>
+                                    <outlet property="imageItem" destination="fdM-nX-DPr" id="ASt-kS-SET"/>
+                                    <outlet property="nameItem" destination="mmA-8R-tkn" id="yTH-Qq-brn"/>
+                                    <outlet property="priceItem" destination="6ej-kc-oFX" id="aFX-Y2-RbK"/>
                                     <segue destination="OpG-XD-5eA" kind="show" identifier="panierToOption" id="Pwu-jp-Cy2"/>
                                 </connections>
                             </tableViewCell>
@@ -188,6 +195,14 @@
                                         <constraint firstItem="hyV-sD-USF" firstAttribute="centerY" secondItem="9JE-0f-YoW" secondAttribute="centerY" id="xOs-or-uGO"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="estimedSH" destination="UFh-oa-1xI" id="cnl-lE-l1e"/>
+                                    <outlet property="priceEstimedSH" destination="ZuA-VQ-O4N" id="6Ol-vE-WMj"/>
+                                    <outlet property="priceSubtotal" destination="AWo-kE-CVI" id="6LI-sQ-Kms"/>
+                                    <outlet property="priceTaxe" destination="Cv3-2A-Vsm" id="kfa-qv-nPv"/>
+                                    <outlet property="subtotal" destination="SCY-Od-JE6" id="zMT-R8-4HB"/>
+                                    <outlet property="taxe" destination="Yia-PT-27b" id="3mE-1w-w1h"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="totalPanierCell" rowHeight="70" id="IQP-l9-hZV" customClass="TotalPanierCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="368" width="375" height="70"/>
@@ -219,6 +234,10 @@
                                         <constraint firstItem="27H-Kt-ZWV" firstAttribute="centerX" secondItem="kgO-WZ-V1G" secondAttribute="centerX" id="g9O-TD-3cf"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="priceTotal" destination="oiA-DG-jTM" id="d2j-h0-vho"/>
+                                    <outlet property="total" destination="eWv-ni-Jmc" id="kfp-yp-Wgq"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="checkoutPanierCell" rowHeight="70" id="9Z2-YJ-VLP" customClass="CheckoutPanierCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="438" width="375" height="70"/>
@@ -244,6 +263,9 @@
                                         <constraint firstItem="FY2-aP-d7p" firstAttribute="centerY" secondItem="IVa-ic-i5L" secondAttribute="centerY" id="XgW-hX-uY6"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="checkout" destination="FY2-aP-d7p" id="EmY-6X-pFz"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -318,6 +340,11 @@
                                         <constraint firstItem="4TP-mm-cKp" firstAttribute="centerY" secondItem="yQv-ZE-Ujp" secondAttribute="centerY" id="Kcg-Z8-gjx"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageItem" destination="vCp-hV-LbU" id="qRF-t0-Vep"/>
+                                    <outlet property="nameItem" destination="NDE-aU-hix" id="ggd-RV-f5n"/>
+                                    <outlet property="priceItem" destination="xrv-RT-She" id="krw-ba-Bk9"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="succesOptionCell" rowHeight="70" id="gCW-Vq-Nuz" customClass="SuccesOptionCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="299" width="375" height="70"/>
@@ -361,6 +388,11 @@
                                         <constraint firstItem="5bz-kR-c1q" firstAttribute="centerX" secondItem="fim-OY-nZn" secondAttribute="centerX" id="dsn-zW-I0k"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="percentage" destination="nRr-Xi-d84" id="9uG-os-mHA"/>
+                                    <outlet property="progressSucces" destination="wcq-Ac-T7U" id="03g-wR-q6g"/>
+                                    <outlet property="succes" destination="82S-Sz-qGF" id="OyA-mj-JYT"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="pickerOptionCell" rowHeight="146" id="g8L-WP-lee" customClass="PickerOptionCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="369" width="375" height="146"/>
@@ -394,6 +426,10 @@
                                         <constraint firstItem="F3g-L3-PNM" firstAttribute="centerY" secondItem="ITx-wf-K3Y" secondAttribute="centerY" id="Y6u-tK-pXm"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="pickerKindeTime" destination="At1-JG-5YR" id="yTG-ik-yJv"/>
+                                    <outlet property="pickerNbrTime" destination="RfC-eK-s6S" id="CRa-uE-GSn"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="accountOptionCell" rowHeight="66" id="VVs-at-1Gj" customClass="AcountOptionCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="515" width="375" height="66"/>
@@ -430,6 +466,10 @@
                                         <constraint firstItem="F5J-FQ-P9o" firstAttribute="centerY" secondItem="31U-6R-YFK" secondAttribute="centerY" id="WH4-mg-JhY"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="account" destination="u5t-Ui-hHr" id="ebX-Gl-cO5"/>
+                                    <outlet property="fieldAccount" destination="SdY-wl-SJi" id="qWu-9L-cqk"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sliderOptionCell" rowHeight="66" id="jx5-FH-g7Y" customClass="SliderOptionCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="581" width="375" height="66"/>
@@ -451,6 +491,9 @@
                                         <constraint firstItem="kOO-FY-tNH" firstAttribute="centerX" secondItem="38z-v1-JRA" secondAttribute="centerX" id="J2r-BG-lag"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="sliderPriceOrder" destination="38z-v1-JRA" id="yDD-x2-My4"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="buyOptionCell" rowHeight="66" id="Xrh-NU-BJ4" customClass="BuyOptionCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="647" width="375" height="66"/>
@@ -472,6 +515,9 @@
                                         <constraint firstItem="TKL-En-Uxy" firstAttribute="centerY" secondItem="g9K-dC-qZg" secondAttribute="centerY" id="fvc-VS-TUR"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="buyOption" destination="TKL-En-Uxy" id="MYq-Bh-gF9"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -562,6 +608,13 @@
                                         <constraint firstItem="3y1-oW-Mdy" firstAttribute="centerY" secondItem="xNq-FG-I6m" secondAttribute="centerY" id="jq8-cH-pbO"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="buy" destination="z25-vy-dnP" id="nMG-Cg-pqe"/>
+                                    <outlet property="buyOption" destination="bo9-ll-HW4" id="7BS-p5-fGK"/>
+                                    <outlet property="imageItem" destination="lq3-gL-EOx" id="hwJ-fh-d9m"/>
+                                    <outlet property="nameItem" destination="cC0-2i-7fy" id="Qfz-pe-pz5"/>
+                                    <outlet property="priceItem" destination="zN0-yk-B9X" id="JhQ-r2-nDi"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderListCell" rowHeight="90" id="4uP-kP-px7" customClass="DetailOrderListeCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="188" width="375" height="90"/>
@@ -611,6 +664,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="dateLineOrder" destination="53l-p8-v1e" id="FVd-kz-iyC"/>
+                                    <outlet property="dateOrder" destination="oIK-k8-qeS" id="R1W-Qm-zS2"/>
+                                    <outlet property="serielNumberOrder" destination="rYl-6K-rFP" id="tpb-lE-WcS"/>
                                     <segue destination="DM3-g9-gaN" kind="show" identifier="listeOrderToDetail" id="d7D-rb-DW4"/>
                                 </connections>
                             </tableViewCell>
@@ -683,6 +739,11 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="cP" destination="XEL-ca-GcR" id="q0t-zM-s7n"/>
+                                    <outlet property="city" destination="6nP-ut-8Yx" id="zpD-3o-VDn"/>
+                                    <outlet property="country" destination="dOZ-YR-A0s" id="vlz-Xo-vxY"/>
+                                    <outlet property="firstLastName" destination="QaH-OE-3PU" id="x4O-n2-QXr"/>
+                                    <outlet property="street" destination="kIF-Ny-nl6" id="bbW-Zx-50o"/>
                                     <segue destination="DM3-g9-gaN" kind="show" identifier="listeAdresseToDetail" id="Ur1-8K-V1S"/>
                                 </connections>
                             </tableViewCell>
@@ -746,6 +807,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="dateExpiryCard" destination="luL-cw-InF" id="4zd-i4-1Jh"/>
+                                    <outlet property="lastFirstName" destination="3bL-a5-fgs" id="iXQ-lL-g0m"/>
+                                    <outlet property="numberCard" destination="pGz-zt-pTJ" id="HkA-eR-W4i"/>
+                                    <outlet property="securityCode" destination="IlW-d7-cBk" id="TKC-O9-VgD"/>
                                     <segue destination="DM3-g9-gaN" kind="show" identifier="listeCardToDetail" id="dmV-lM-Bhx"/>
                                 </connections>
                             </tableViewCell>
@@ -802,6 +867,11 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateLineOrder" destination="LPz-Sf-VGx" id="C53-UQ-HSx"/>
+                                    <outlet property="dateOrder" destination="R46-OR-vTo" id="ZHg-th-CcK"/>
+                                    <outlet property="statutOrder" destination="2XZ-iu-flx" id="dts-BN-PIO"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemDetailCell" rowHeight="140" id="4RS-la-ZvQ" customClass="ItemDetailCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="98" width="375" height="140"/>
@@ -866,6 +936,13 @@
                                         <constraint firstItem="7jg-EJ-BTv" firstAttribute="leading" secondItem="YG2-WS-OLd" secondAttribute="trailing" id="c5j-Ik-9WG"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descripItem" destination="tWD-Eq-oUB" id="pwm-fo-yCz"/>
+                                    <outlet property="itemImage" destination="YG2-WS-OLd" id="WbG-nr-Z5V"/>
+                                    <outlet property="nameItem" destination="Dyq-rt-V36" id="BIz-AF-r1U"/>
+                                    <outlet property="nbrItem" destination="8Go-ja-w9c" id="Fyq-rU-Jep"/>
+                                    <outlet property="priceItem" destination="fPs-pB-vyk" id="yVA-qH-Dc1"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="subtotalDetailCell" rowHeight="125" id="9Ae-no-IWl" customClass="SubTotalDetailCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="238" width="375" height="125"/>
@@ -936,6 +1013,14 @@
                                         <constraint firstItem="7QC-Lb-FCT" firstAttribute="centerY" secondItem="NqS-kw-C7x" secondAttribute="centerY" id="Ipm-fo-QjO"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="estimSH" destination="1Ik-3g-mS1" id="4DX-Q0-rRE"/>
+                                    <outlet property="priceEstimSH" destination="B7T-W6-bg2" id="hvA-pb-QGi"/>
+                                    <outlet property="priceSubtotal" destination="gWK-bj-Q1K" id="8fn-3e-eun"/>
+                                    <outlet property="priceTaxe" destination="CRo-Rm-TwN" id="gHN-YW-TaU"/>
+                                    <outlet property="subtotal" destination="YRB-yi-oL7" id="oyA-um-Qlp"/>
+                                    <outlet property="taxe" destination="3F2-al-Rgl" id="FKg-W1-OJb"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="totalDetailListeCell" rowHeight="70" id="R8L-4t-esT" customClass="TotalDetailCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="363" width="375" height="70"/>
@@ -967,6 +1052,10 @@
                                         <constraint firstItem="H7M-lk-84L" firstAttribute="centerY" secondItem="ccw-ok-fhv" secondAttribute="centerY" id="gHu-Ja-ChA"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="priceTotal" destination="que-w1-PLY" id="xp7-Jc-fHX"/>
+                                    <outlet property="total" destination="Mcz-fE-8Lz" id="6tM-ba-NNo"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cardDetailCell" rowHeight="440" id="PVQ-rC-bcI" customClass="CardDetailCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="433" width="375" height="440"/>
@@ -1074,6 +1163,16 @@
                                         <constraint firstItem="5tI-Zb-gbo" firstAttribute="centerX" secondItem="3U9-T0-I6b" secondAttribute="centerX" id="lwi-bz-SeI"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cardNumber" destination="0Hv-Ty-LQO" id="nut-Xu-ksf"/>
+                                    <outlet property="expirationDate" destination="lJI-Dg-BdN" id="wCX-pz-7jM"/>
+                                    <outlet property="nameCard" destination="gaB-Q8-Oxh" id="Wvf-h1-JC2"/>
+                                    <outlet property="saisieCardNumber" destination="fLK-Cu-NQb" id="Uxk-Gf-9Fu"/>
+                                    <outlet property="saisieExpirationDate" destination="VzN-hc-BKx" id="uNt-0U-VhZ"/>
+                                    <outlet property="saisieNameCard" destination="SWs-Xx-4I0" id="R0O-9g-2Ei"/>
+                                    <outlet property="saisieSecurityCode" destination="SPh-lN-dxB" id="5uI-1N-9fN"/>
+                                    <outlet property="securityCode" destination="8zZ-rm-SmI" id="rgO-Ie-e56"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="adresseDetailCell" rowHeight="770" id="xPz-Yp-gcc" customClass="AdresseDetailCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="873" width="375" height="770"/>
@@ -1255,6 +1354,23 @@
                                         <constraint firstItem="Bud-cP-khf" firstAttribute="centerY" secondItem="X0W-we-vNL" secondAttribute="centerY" id="khq-nA-S7R"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="city" destination="oe7-35-bBl" id="5PO-mF-BdT"/>
+                                    <outlet property="codePostal" destination="cdI-Es-uuB" id="gyb-qM-lOD"/>
+                                    <outlet property="country" destination="wNK-y6-ncu" id="JvD-Be-SzT"/>
+                                    <outlet property="firstName" destination="xxO-i9-QNq" id="uAg-iC-7OB"/>
+                                    <outlet property="lastName" destination="frS-y1-CqX" id="zcy-BB-YTf"/>
+                                    <outlet property="saisieCP" destination="rmv-Yw-9EO" id="UDk-So-ymf"/>
+                                    <outlet property="saisieCity" destination="T9b-HJ-0j0" id="lhw-X8-Hcb"/>
+                                    <outlet property="saisieCountry" destination="7SA-aX-hRh" id="CJw-MQ-a1B"/>
+                                    <outlet property="saisieFirstName" destination="i9s-Hd-hmI" id="BtV-Vz-HcA"/>
+                                    <outlet property="saisieLastName" destination="a5G-19-0zS" id="1Bc-UB-wvr"/>
+                                    <outlet property="saisieStreet" destination="Se4-Hz-ZqX" id="Xbj-nr-pne"/>
+                                    <outlet property="saisieStreetCompl" destination="pzs-HO-hV8" id="CaC-E9-G7C"/>
+                                    <outlet property="socialStatue" destination="wYZ-tp-MlW" id="bD2-zh-Vyk"/>
+                                    <outlet property="street" destination="any-Ou-RL1" id="iNE-WX-3gb"/>
+                                    <outlet property="streetCompl" destination="CUa-bC-vrP" id="Lcp-zw-e78"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="okDetailCell" rowHeight="70" id="jVL-iZ-uxt" customClass="OkDetailCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="1643" width="375" height="70"/>
@@ -1273,6 +1389,9 @@
                                         <constraint firstItem="Keh-Uk-bUe" firstAttribute="centerX" secondItem="T4o-Va-CVm" secondAttribute="centerX" id="xzz-Jn-zsG"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="confirm" destination="Keh-Uk-bUe" id="GSM-qk-KfY"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1314,6 +1433,9 @@
                                         <constraint firstItem="7dr-zX-rii" firstAttribute="centerY" secondItem="leh-Cc-x93" secondAttribute="centerY" id="fOl-9Y-vfY"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameType" destination="7dr-zX-rii" id="oTP-vV-wSv"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="adressOrderCell" rowHeight="750" id="hmE-xo-pio" customClass="AdresseOrderCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="98" width="375" height="750"/>
@@ -1495,6 +1617,23 @@
                                         <constraint firstItem="ZVa-Fx-udG" firstAttribute="centerY" secondItem="tXS-uY-Qha" secondAttribute="centerY" id="bsI-0s-EuF"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="City" destination="OGM-FB-sYX" id="i2L-cO-vnx"/>
+                                    <outlet property="Street" destination="ajo-z1-b63" id="oIq-1o-ZYc"/>
+                                    <outlet property="cP" destination="bGV-Pt-WEP" id="Q9z-Cu-KAr"/>
+                                    <outlet property="civilState" destination="7IW-S8-RMN" id="Tk1-VX-rbW"/>
+                                    <outlet property="country" destination="eIf-tL-VJz" id="Taf-Vp-aYs"/>
+                                    <outlet property="fieldCP" destination="RHE-tS-H7A" id="1YY-Wt-PF8"/>
+                                    <outlet property="fieldCity" destination="Bsg-0i-ZUZ" id="bpy-IK-VfH"/>
+                                    <outlet property="fieldCountry" destination="rW6-KN-ifj" id="aB5-0E-SPp"/>
+                                    <outlet property="fieldFirstName" destination="QlL-1L-V9n" id="XsG-Ix-4qz"/>
+                                    <outlet property="fieldStreet" destination="xsf-yi-Dv3" id="u81-yY-3lw"/>
+                                    <outlet property="fieldStreetCompl" destination="GvV-4V-W0T" id="aEh-TP-iAx"/>
+                                    <outlet property="fielsLastName" destination="3WF-Xu-c75" id="aNF-ie-onx"/>
+                                    <outlet property="firstName" destination="psa-Fi-sMY" id="WSi-jd-sIb"/>
+                                    <outlet property="lastName" destination="Keg-a9-RPJ" id="zsA-n7-fFf"/>
+                                    <outlet property="streetCompl" destination="6qh-pt-Rm3" id="0WA-4p-OPg"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SubmitOrderCell" rowHeight="80" id="Nxd-mb-SUl" customClass="SubmitOrderCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="848" width="375" height="80"/>
@@ -1520,6 +1659,9 @@
                                         <constraint firstItem="Q89-UU-Q9p" firstAttribute="centerX" secondItem="U1C-H3-jAo" secondAttribute="centerX" constant="-7" id="gtQ-3W-lMD"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="submitOrder" destination="Q89-UU-Q9p" id="mxb-Qw-QQB"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1561,6 +1703,9 @@
                                         <constraint firstItem="VZT-MD-Tbq" firstAttribute="centerX" secondItem="6Rf-nE-4iN" secondAttribute="centerX" id="LkX-Y3-jPa"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameType" destination="VZT-MD-Tbq" id="kGE-ga-Dln"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cardPaymentCell" rowHeight="407" id="Tfu-n1-wcD" customClass="CardPaymentCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="98" width="375" height="407"/>
@@ -1668,6 +1813,16 @@
                                         <constraint firstItem="hVi-gM-TcI" firstAttribute="centerX" secondItem="rac-Bu-P6g" secondAttribute="centerX" id="SKI-xG-qyo"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cardNumber" destination="Z3L-PM-4rv" id="tIs-YN-pDX"/>
+                                    <outlet property="email" destination="HSi-M8-s3y" id="cxx-bX-7aL"/>
+                                    <outlet property="expiryDate" destination="8kc-VE-wwA" id="xTp-PH-EtF"/>
+                                    <outlet property="saisieCardNumber" destination="K8N-Kp-FLl" id="NbW-K0-PAC"/>
+                                    <outlet property="saisieEMail" destination="x3A-8V-rUM" id="cfe-ww-cik"/>
+                                    <outlet property="saisieExpiryDate" destination="pgu-vG-FWx" id="0ni-ga-VZh"/>
+                                    <outlet property="saisieSecurityCode" destination="CpX-S3-IHQ" id="z9j-3m-s4O"/>
+                                    <outlet property="securityCode" destination="nrC-wS-5Ju" id="Mvn-uv-Yhy"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="subtotalPaymentCell" rowHeight="125" id="yVz-Th-R1P" customClass="SubtotalPaymentCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="505" width="375" height="125"/>
@@ -1738,8 +1893,16 @@
                                         <constraint firstItem="MvQ-gM-GWM" firstAttribute="centerY" secondItem="s5E-e5-Acx" secondAttribute="centerY" id="ZUE-Xm-hTh"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="estimedSH" destination="yOB-g1-Aoy" id="NFG-D4-hK0"/>
+                                    <outlet property="priceEstimedSH" destination="vDP-xw-rG3" id="FoD-Ow-fuV"/>
+                                    <outlet property="priceSubtotal" destination="0te-Zq-lOn" id="db6-It-FRo"/>
+                                    <outlet property="priceTaxe" destination="QRs-s8-bYA" id="rgh-4g-Cp7"/>
+                                    <outlet property="subtotal" destination="ZBq-1u-evs" id="frE-X4-1Zp"/>
+                                    <outlet property="taxe" destination="gX3-Mb-gMx" id="9u0-Uf-Xzb"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="totalPaymentCell" rowHeight="70" id="rGc-wv-I4s" customClass="TypePaymentCell" customModule="BuyOption" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="totalPaymentCell" rowHeight="70" id="rGc-wv-I4s" customClass="TotalPaymentCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="630" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rGc-wv-I4s" id="iQg-2J-To6">
@@ -1769,6 +1932,10 @@
                                         <constraint firstItem="YhE-cm-qsT" firstAttribute="centerY" secondItem="iQg-2J-To6" secondAttribute="centerY" id="zxs-s2-l65"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="priceTotal" destination="rs5-nC-fzi" id="9q8-pC-paa"/>
+                                    <outlet property="total" destination="Z93-Je-VDs" id="1cp-T1-fmk"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="submitPaymentCell" rowHeight="70" id="F9h-gF-cQ7" customClass="SubmitPaymentCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="700" width="375" height="70"/>
@@ -1790,6 +1957,9 @@
                                         <constraint firstItem="eve-0u-dwz" firstAttribute="centerX" secondItem="JWF-IO-hvs" secondAttribute="centerX" id="uFn-rc-JLW"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="submitOrder" destination="eve-0u-dwz" id="m8M-ff-BAE"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1902,6 +2072,13 @@
                                         <constraint firstItem="DVx-0Y-ZeK" firstAttribute="centerX" secondItem="ahT-Qw-Ape" secondAttribute="centerX" id="gDJ-oc-qPD"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="inProgress" destination="3QR-bC-0Gk" id="IL7-sD-aFO"/>
+                                    <outlet property="nbrOption" destination="1vR-1h-Ug7" id="k0u-Tq-PUQ"/>
+                                    <outlet property="nbrOrder" destination="MqW-yJ-vla" id="TmZ-2a-AtG"/>
+                                    <outlet property="option" destination="HkL-le-ftt" id="dPf-P9-j9W"/>
+                                    <outlet property="order" destination="Tgl-pS-9Qg" id="2g9-VI-wyb"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="optionListeCell" rowHeight="60" id="qeq-jq-5v2" customClass="OptionListeCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="149" width="375" height="60"/>
@@ -1926,6 +2103,9 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="uih-Kr-azY" secondAttribute="bottom" constant="2" id="uYQ-tS-MiX"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="optionListe" destination="uih-Kr-azY" id="lon-9F-Eag"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="disconnectProfileCell" rowHeight="70" id="sbH-w5-3BS" customClass="DisconnectProfileCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="209" width="375" height="70"/>
@@ -1952,6 +2132,9 @@
                                         <constraint firstItem="jCz-Ut-9YX" firstAttribute="centerX" secondItem="rWo-OF-d8s" secondAttribute="centerX" id="mmp-rW-aaL"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="discounnect" destination="jCz-Ut-9YX" id="d2A-N1-Q9P"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -2068,6 +2251,9 @@
                                         <constraint firstAttribute="bottom" secondItem="fBz-mx-S3A" secondAttribute="bottom" id="zdi-W6-o4r"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="searchBar" destination="fBz-mx-S3A" id="Yqw-dl-jvm"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="50" id="7lH-vt-L7R" customClass="CategoryCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="98" width="375" height="50"/>
@@ -2091,6 +2277,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="nameCategory" destination="Lb5-sq-AyM" id="c2p-Lw-YIe"/>
                                     <segue destination="OiF-Pn-jw5" kind="show" identifier="searchToListeCategory" id="dHH-H5-ZFz"/>
                                 </connections>
                             </tableViewCell>
@@ -2134,6 +2321,9 @@
                                         <constraint firstAttribute="trailing" secondItem="cfI-y7-GqP" secondAttribute="trailing" id="zKD-51-iJ0"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="searchBar" destination="cfI-y7-GqP" id="o6C-uR-9qS"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="subCategoryCell" rowHeight="50" id="1Cw-NL-oI7" customClass="SubCategoryCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="98" width="375" height="50"/>
@@ -2151,6 +2341,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameSubCategory" destination="NjD-dI-KLt" id="aSD-r2-fIL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -2227,7 +2420,7 @@
         <image name="SubmitButton" width="250" height="51"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="f7b-T3-vBL"/>
+        <segue reference="WrZ-5v-iGx"/>
         <segue reference="Ur1-8K-V1S"/>
     </inferredMetricsTieBreakers>
 </document>

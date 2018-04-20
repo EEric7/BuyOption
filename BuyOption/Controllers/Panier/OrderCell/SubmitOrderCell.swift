@@ -9,7 +9,8 @@
 import UIKit
 
 class SubmitOrderCell: UITableViewCell {
-
+    @IBOutlet weak var submitOrder: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

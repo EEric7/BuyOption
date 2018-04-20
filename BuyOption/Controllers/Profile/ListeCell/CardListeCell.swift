@@ -9,7 +9,11 @@
 import UIKit
 
 class CardListeCell: UITableViewCell {
-
+    @IBOutlet weak var lastFirstName: UILabel!
+    @IBOutlet weak var numberCard: UILabel!
+    @IBOutlet weak var dateExpiryCard: UILabel!
+    @IBOutlet weak var securityCode: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

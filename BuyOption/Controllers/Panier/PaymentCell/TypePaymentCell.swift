@@ -9,7 +9,8 @@
 import UIKit
 
 class TypePaymentCell: UITableViewCell {
-
+    @IBOutlet weak var nameType: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

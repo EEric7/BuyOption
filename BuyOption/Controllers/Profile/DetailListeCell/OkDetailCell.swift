@@ -9,7 +9,8 @@
 import UIKit
 
 class OkDetailCell: UITableViewCell {
-
+    @IBOutlet weak var confirm: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

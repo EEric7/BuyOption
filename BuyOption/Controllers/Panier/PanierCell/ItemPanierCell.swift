@@ -9,7 +9,11 @@
 import UIKit
 
 class ItemPanierCell: UITableViewCell {
-
+    @IBOutlet weak var imageItem: UIImageView!
+    @IBOutlet weak var nameItem: UILabel!
+    @IBOutlet weak var priceItem: UILabel!
+    @IBOutlet weak var buyOption: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

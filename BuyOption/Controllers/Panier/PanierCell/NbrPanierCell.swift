@@ -9,7 +9,8 @@
 import UIKit
 
 class NbrPanierCell: UITableViewCell {
-
+    @IBOutlet weak var nbrItem: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
