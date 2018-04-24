@@ -15,8 +15,9 @@ struct Profile {
     let firstName: String
     let lastName: String
     let eMail: String
+    let card: Card
     let numberPhone: String
-    let street: String
+    let street: Street
     
     var panier: [Product]
     var orders: [Order]
@@ -29,7 +30,8 @@ struct Profile {
         self.lastName = json["lastName"].stringValue
         self.eMail = json["eMail"].stringValue
         self.numberPhone = json.stringValue
-        self.street = json.stringValue
+        self.card = Card(json: json["card"])
+        self.street = Street(json: json["street"])
         self.panier = []
         self.orders = []
         self.options = []
@@ -49,6 +51,31 @@ struct Profile {
                 self.options.append(Option(json: option))
             }
         }
+    }
+}
+
+struct Street {
+    let street: String
+    let city: String
+    let country: String
+    let cp: String
+    
+    init(json: JSON) {
+        self.street = json["street"].stringValue
+        self.city = json["city"].stringValue
+        self.country = json["country"].stringValue
+        self.cp = json["cp"].stringValue
+    }
+}
+
+struct Card {
+    let numberCard: Int
+    let delaiExpiry: String
+    let securityCode: Int
+    init(json: JSON) {
+        self.numberCard = json["numberCard"].intValue
+        self.delaiExpiry = json["delaiExpiry"].stringValue
+        self.securityCode = json["securityCode"].intValue
     }
 }
 
@@ -72,6 +99,7 @@ struct Order {
 struct Option {
     let idOB: Int
     let update: String
+    let created: String
     let reference: String
     let delaiExpiry: String
     let mntAccount: Double
@@ -84,5 +112,6 @@ struct Option {
         self.delaiExpiry = json["delaiExpiry"].stringValue
         self.mntAccount = json["mntAccount"].doubleValue
         self.product = Product(json: json["product"])
+        self.created = json["created"].stringValue
     }
 }

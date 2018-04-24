@@ -37,6 +37,7 @@ struct OptionListe {
 }
 
 struct Liste {
+    static var profile: Profile?
     static var tableProduct: [Product] = []
     static var tableOption: [String] = [OptionListe.wishList, OptionListe.buyOptionList, OptionListe.orderList, OptionListe.streetList, OptionListe.cardList]
 }

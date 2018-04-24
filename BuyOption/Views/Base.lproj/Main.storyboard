@@ -542,7 +542,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemListeCell" rowHeight="160" id="npK-xM-hbK" customClass="ItemListeCell" customModule="BuyOption" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemListeCell" rowHeight="160" id="npK-xM-hbK" customClass="ItemListCell" customModule="BuyOption" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="160"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="npK-xM-hbK" id="xNq-FG-I6m">
@@ -814,6 +814,32 @@
                                     <outlet property="numberCard" destination="pGz-zt-pTJ" id="HkA-eR-W4i"/>
                                     <outlet property="securityCode" destination="IlW-d7-cBk" id="TKC-O9-VgD"/>
                                     <segue destination="DM3-g9-gaN" kind="show" identifier="cardToDetail" id="dmV-lM-Bhx"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" tag="4" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="emptyListe" rowHeight="190" id="0zg-tW-D6m" customClass="EmptyListCell" customModule="BuyOption" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="658" width="375" height="190"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0zg-tW-D6m" id="XgZ-eG-cfS">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="189.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7G-LK-j1n">
+                                            <rect key="frame" x="168" y="85" width="38" height="19"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="S7G-LK-j1n" secondAttribute="height" multiplier="2:1" id="3qF-jH-3GI"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="S7G-LK-j1n" firstAttribute="centerX" secondItem="XgZ-eG-cfS" secondAttribute="centerX" id="DgV-mj-hIH"/>
+                                        <constraint firstItem="S7G-LK-j1n" firstAttribute="centerY" secondItem="XgZ-eG-cfS" secondAttribute="centerY" id="dFg-Fm-eoI"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="empty" destination="S7G-LK-j1n" id="e6a-3G-nUD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -2019,16 +2045,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DVx-0Y-ZeK">
-                                            <rect key="frame" x="93.5" y="22.5" width="189" height="75"/>
+                                            <rect key="frame" x="86" y="20" width="204.5" height="81"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QR-bC-0Gk">
-                                                    <rect key="frame" x="44.5" y="0.0" width="100" height="24"/>
-                                                    <fontDescription key="fontDescription" name="Axile-PersonalUseOnly" family="Axile - Personal Use Only" pointSize="20"/>
+                                                    <rect key="frame" x="40" y="0.0" width="124.5" height="30"/>
+                                                    <fontDescription key="fontDescription" name="Axile-PersonalUseOnly" family="Axile - Personal Use Only" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="P7S-JC-3nY">
-                                                    <rect key="frame" x="0.0" y="24" width="189" height="51"/>
+                                                    <rect key="frame" x="8" y="30" width="189" height="51"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ecj-gH-0OV">
                                                             <rect key="frame" x="0.0" y="0.0" width="48" height="51"/>
@@ -2094,11 +2120,11 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1X-5L-VFt">
-                                            <rect key="frame" x="22" y="20" width="42" height="20"/>
+                                            <rect key="frame" x="22" y="20" width="46" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="q1o-A3-6sC"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>

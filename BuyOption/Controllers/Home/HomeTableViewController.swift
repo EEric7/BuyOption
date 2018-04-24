@@ -20,7 +20,6 @@ class HomeTableViewController: UITableViewController {
         fetchProducts()
         navigationItem.title = "BuyOption"
         self.tableView.reloadData()
-        
         self.tableView.estimatedRowHeight = tableView.rowHeight
         self.tableView.rowHeight = UITableViewAutomaticDimension
     }

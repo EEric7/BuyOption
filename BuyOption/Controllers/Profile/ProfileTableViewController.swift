@@ -21,7 +21,6 @@ class ProfileTableViewController: UITableViewController {
         super.viewDidLoad()
         navigationItem.title = "Profile"
         self.tableView.reloadData()
-        
         self.tableView.estimatedRowHeight = tableView.rowHeight
         self.tableView.rowHeight = UITableViewAutomaticDimension
     }
