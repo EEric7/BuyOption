@@ -63,19 +63,19 @@ extension ListeTableViewController {
                     return 0
                 }
             case 2:
-                if cell?.tag == 2 {
+                if cell?.tag == 1 {
                     return 190
                 } else {
                     return 0
                 }
             case 3:
-                if cell?.tag == 3 {
+                if cell?.tag == 2 {
                     return 160
                 } else {
                     return 0
                 }
             default:
-                if cell?.tag == 5 {
+                if cell?.tag == 3 {
                     return 190
                 } else {
                     return 0
