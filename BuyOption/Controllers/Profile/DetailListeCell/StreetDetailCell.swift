@@ -1,5 +1,5 @@
 //
-//  AdresseOrderCell.swift
+//  AdresseDetailCell.swift
 //  BuyOption
 //
 //  Created by Eric ELEMBA ADI on 19/04/2018.
@@ -8,22 +8,22 @@
 
 import UIKit
 
-class AdresseOrderCell: UITableViewCell {
-    @IBOutlet weak var civilState: UISegmentedControl!
+class StreetDetailCell: UITableViewCell {
+    @IBOutlet weak var socialStatue: UISegmentedControl!
     @IBOutlet weak var firstName: UILabel!
-    @IBOutlet weak var fieldFirstName: UITextField!
+    @IBOutlet weak var saisieFirstName: UITextField!
     @IBOutlet weak var lastName: UILabel!
-    @IBOutlet weak var fielsLastName: UITextField!
-    @IBOutlet weak var Street: UILabel!
-    @IBOutlet weak var fieldStreet: UITextField!
+    @IBOutlet weak var saisieLastName: UITextField!
+    @IBOutlet weak var street: UILabel!
+    @IBOutlet weak var saisieStreet: UITextField!
     @IBOutlet weak var streetCompl: UILabel!
-    @IBOutlet weak var fieldStreetCompl: UITextField!
-    @IBOutlet weak var cP: UILabel!
-    @IBOutlet weak var fieldCP: UITextField!
-    @IBOutlet weak var City: UILabel!
-    @IBOutlet weak var fieldCity: UITextField!
+    @IBOutlet weak var saisieStreetCompl: UITextField!
+    @IBOutlet weak var codePostal: UILabel!
+    @IBOutlet weak var saisieCP: UITextField!
+    @IBOutlet weak var city: UILabel!
+    @IBOutlet weak var saisieCity: UITextField!
     @IBOutlet weak var country: UILabel!
-    @IBOutlet weak var fieldCountry: UITextField!
+    @IBOutlet weak var saisieCountry: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()

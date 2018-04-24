@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AdressListCell: UITableViewCell {
+class StreetListCell: UITableViewCell {
     @IBOutlet weak var firstLastName: UILabel!
     @IBOutlet weak var street: UILabel!
     @IBOutlet weak var cP: UILabel!

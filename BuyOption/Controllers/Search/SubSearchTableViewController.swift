@@ -9,7 +9,10 @@
 import UIKit
 
 class SubSearchTableViewController: UITableViewController {
-
+    struct Stotyboard {
+        static let searchCell = "searchCategoryCell"
+        static let subcategoryCell = "subCategoryCell"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

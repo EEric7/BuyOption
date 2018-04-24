@@ -9,6 +9,14 @@
 import UIKit
 
 class PanierTableViewController: UITableViewController {
+    
+    struct Storyboard {
+        static let nbrCell = "nbrItemCell"
+        static let itemCell = "itemPanierCell"
+        static let submitCell = "subTotalPanierCell"
+        static let totalCell = "totalPanierCell"
+        static let checkoutCell = "checkoutPanierCell"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

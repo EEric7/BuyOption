@@ -9,7 +9,7 @@
 import UIKit
 
 class OptionListeCell: UITableViewCell {
-    @IBOutlet weak var optionListe: UIButton!
+    @IBOutlet weak var titleOption: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

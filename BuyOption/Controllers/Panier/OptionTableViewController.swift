@@ -9,6 +9,14 @@
 import UIKit
 
 class OptionTableViewController: UITableViewController {
+    struct Storyboard {
+        static let itemCell = "itemOptionCell"
+        static let succesCell = "succesOptionCell"
+        static let pickerCell = "pickerOptionCell"
+        static let acountCell = "accountOptionCell"
+        static let sliderCell = "sliderOptionCell"
+        static let buyOption = "buyOptionCell"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

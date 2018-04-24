@@ -9,7 +9,11 @@
 import UIKit
 
 class OrderTableViewController: UITableViewController {
-
+    struct Storyboard {
+        static let itemCell = "typeOrderCell"
+        static let streetCell = "streetOrderCell"
+        static let submitCell = "submitOrderCell"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
