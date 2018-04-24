@@ -18,7 +18,6 @@ struct Profile {
     let card: Card
     let numberPhone: String
     let street: Street
-    
     var panier: [Product]
     var orders: [Order]
     var options: [Option]
