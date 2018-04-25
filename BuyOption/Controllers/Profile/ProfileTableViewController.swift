@@ -41,7 +41,7 @@ extension ProfileTableViewController
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.detailCell, for: indexPath) as! DetailProfileCell
-            cell.inProgress.text = "In progress"
+            cell.inProgress.text = "Profile Name"
             cell.nbrOption.text = "0"
             cell.nbrOrder.text = "0"
             cell.option.text = "Option"

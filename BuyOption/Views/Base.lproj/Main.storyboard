@@ -18,7 +18,7 @@
         <array key="AvenirNextCondensed.ttc">
             <string>AvenirNextCondensed-DemiBold</string>
         </array>
-        <array key="Axile - Personal Use Only.otf">
+        <array key="Axile - Personal Use Only.ttf">
             <string>Axile-PersonalUseOnly</string>
         </array>
     </customFonts>
@@ -2050,7 +2050,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QR-bC-0Gk">
                                                     <rect key="frame" x="40" y="0.0" width="124.5" height="30"/>
                                                     <fontDescription key="fontDescription" name="Axile-PersonalUseOnly" family="Axile - Personal Use Only" pointSize="25"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.97106758959999995" green="1" blue="0.98609129449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="P7S-JC-3nY">
@@ -2062,13 +2062,13 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgl-pS-9Qg">
                                                                     <rect key="frame" x="0.0" y="0.0" width="48" height="20.5"/>
                                                                     <fontDescription key="fontDescription" name="Axile-PersonalUseOnly" family="Axile - Personal Use Only" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" red="0.97106758959999995" green="1" blue="0.98609129449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqW-yJ-vla">
                                                                     <rect key="frame" x="0.0" y="30.5" width="10.5" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" red="0.97106758959999995" green="1" blue="0.98609129449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -2079,13 +2079,13 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkL-le-ftt">
                                                                     <rect key="frame" x="0.0" y="0.0" width="51" height="20.5"/>
                                                                     <fontDescription key="fontDescription" name="Axile-PersonalUseOnly" family="Axile - Personal Use Only" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" red="0.97106758959999995" green="1" blue="0.98609129449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vR-1h-Ug7">
                                                                     <rect key="frame" x="0.0" y="30.5" width="10.5" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" red="0.97106758959999995" green="1" blue="0.98609129449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -2103,7 +2103,7 @@
                                         <constraint firstItem="DVx-0Y-ZeK" firstAttribute="centerX" secondItem="ahT-Qw-Ape" secondAttribute="centerX" id="ot9-PZ-0Xu"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="1" green="0.67060597180000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="inProgress" destination="3QR-bC-0Gk" id="IL7-sD-aFO"/>
                                     <outlet property="nbrOption" destination="1vR-1h-Ug7" id="k0u-Tq-PUQ"/>
@@ -2456,7 +2456,7 @@
         <image name="SubmitButton" width="250" height="51"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="f7b-T3-vBL"/>
-        <segue reference="Ur1-8K-V1S"/>
+        <segue reference="WrZ-5v-iGx"/>
+        <segue reference="dmV-lM-Bhx"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -47,61 +47,66 @@ extension ListeTableViewController {
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let cell = tableView.cellForRow(at: indexPath)
-        
-        switch statuSegue {
-            case 0:
-                if cell?.tag == 0 {
-                    return 160
-                } else {
-                    return 0
-                }
-            case 1:
-                if cell?.tag == 1{
-                    return 90
-                } else {
-                    return 0
-                }
-            case 2:
-                if cell?.tag == 1 {
-                    return 190
-                } else {
-                    return 0
-                }
-            case 3:
-                if cell?.tag == 2 {
-                    return 160
-                } else {
-                    return 0
-                }
-            default:
-                if cell?.tag == 3 {
-                    return 190
-                } else {
-                    return 0
-                }
-        }
+            switch statuSegue {
+                case 0:
+                        if (tableView.dequeueReusableCell(withIdentifier: Storyboard.itemCell)?.tag == 0) || Liste.profile?.panier.isEmpty == true {
+                            return 160
+                        } else {
+                            return 0
+                        }
+                case 1:
+                        if (tableView.dequeueReusableCell(withIdentifier: Storyboard.orderCell)?.tag == 1) || Liste.profile?.options.isEmpty == true {
+                            return 90
+                        } else {
+                            return 0
+                        }
+                    
+                case 2:
+                        if (tableView.dequeueReusableCell(withIdentifier: Storyboard.orderCell)?.tag == 1) || Liste.profile?.orders.isEmpty == true {
+                            return 160
+                        } else {
+                            return 0
+                        }
+                case 3:
+                    if (tableView.dequeueReusableCell(withIdentifier: Storyboard.streetCell)?.tag == 2) || Liste.profile?.street != nil {
+                        return 190
+                    } else {
+                        return 0
+                    }
+                case 4:
+                    if (tableView.dequeueReusableCell(withIdentifier: Storyboard.cardCell)?.tag == 3) || Liste.profile?.card != nil {
+                        return 190
+                    } else {
+                        return 0
+                    }
+                default:
+                    if (tableView.dequeueReusableCell(withIdentifier: Storyboard.cardCell)?.tag == 4) {
+                        return 190
+                    } else {
+                        return 0
+                    }
+            }
     }
 
      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if statuSegue == 0 {
+        if statuSegue == 0 || Liste.profile?.panier.isEmpty == true {
             let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.itemCell, for: indexPath) as! ItemListCell
             cell.nameItem.text = Liste.profile?.panier[indexPath.row].name
             cell.priceItem.text = String(describing: Liste.profile?.panier[indexPath.row].offer.salePrice)
-            return cell
-        } else if statuSegue == 1 {
+           return cell
+        } else if statuSegue == 1 || Liste.profile?.options.isEmpty == true {
             let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.orderCell, for: indexPath) as! DetailOrderListeCell
-                cell.dateLineOrder.text = Liste.profile?.options[indexPath.row].delaiExpiry
-                cell.dateOrder.text = Liste.profile?.options[indexPath.row].created
-                cell.serielNumberOrder.text = Liste.profile?.options[indexPath.row].reference
+                cell.dateLineOrder.text = "10/2/19"
+                cell.dateOrder.text = "10/15/18"
+                cell.serielNumberOrder.text = "23244544545"
             return cell
-         } else if statuSegue == 2 {
+         } else if statuSegue == 2 || Liste.profile?.orders.isEmpty == true {
             let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.orderCell, for: indexPath) as! DetailOrderListeCell
                 cell.dateLineOrder.isHidden = true
-                cell.dateOrder.text = Liste.profile?.orders[indexPath.row].created
-                cell.serielNumberOrder.text = Liste.profile?.orders[indexPath.row].reference
-            return cell
-         } else if statuSegue == 3 {
+                cell.dateOrder.text = "12/16/18"
+                cell.serielNumberOrder.text = "232454534635635"
+           return cell
+         } else if statuSegue == 3 || Liste.profile?.street != nil {
             let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.streetCell, for: indexPath) as! StreetListCell
             cell.firstLastName.text = "Max"
                 cell.street.text = "22 Melrose Place"
@@ -109,16 +114,18 @@ extension ListeTableViewController {
                 cell.cP.text = "77328"
                 cell.country.text = "USA"
             return cell
-        } else if statuSegue == 4 {
+        } else if statuSegue == 4 || Liste.profile?.card != nil {
             let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.cardCell, for: indexPath) as! CardListeCell
             cell.lastFirstName.text = "Max"
             cell.numberCard.text = "44393939349394"
             cell.securityCode.text = "345"
             cell.dateExpiryCard.text = "14/23"
-        }
+            return cell
+        } else {
         let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.emptyCell, for: indexPath) as! EmptyListCell
         cell.empty.text = "Empty"
         return cell
+        }
     }
 }
 
